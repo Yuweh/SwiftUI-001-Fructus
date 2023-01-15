@@ -14,6 +14,8 @@
 		47600BA42974291A00394815 /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47600BA32974291A00394815 /* FruitCardView.swift */; };
 		47600BA62974629900394815 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47600BA52974629900394815 /* StartButtonView.swift */; };
 		47600BA8297471BC00394815 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47600BA7297471BC00394815 /* OnboardingView.swift */; };
+		47600BAB2974750300394815 /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47600BAA2974750300394815 /* FruitModel.swift */; };
+		47600BAE2974760000394815 /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47600BAD2974760000394815 /* FruitData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		47600BA32974291A00394815 /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
 		47600BA52974629900394815 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 		47600BA7297471BC00394815 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		47600BAA2974750300394815 /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
+		47600BAD2974760000394815 /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 		47600B9229740EF000394815 /* Fructus */ = {
 			isa = PBXGroup;
 			children = (
+				47600BAC297475F300394815 /* Data */,
+				47600BA9297474F500394815 /* Model */,
 				47600BA22974290400394815 /* View */,
 				47600BA1297428EE00394815 /* App */,
 				47600B9729740EF200394815 /* Assets.xcassets */,
@@ -90,6 +96,22 @@
 				47600BA52974629900394815 /* StartButtonView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		47600BA9297474F500394815 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47600BAA2974750300394815 /* FruitModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47600BAC297475F300394815 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				47600BAD2974760000394815 /* FruitData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,10 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47600BAE2974760000394815 /* FruitData.swift in Sources */,
 				47600BA42974291A00394815 /* FruitCardView.swift in Sources */,
 				47600BA62974629900394815 /* StartButtonView.swift in Sources */,
 				47600B9629740EF000394815 /* ContentView.swift in Sources */,
 				47600BA8297471BC00394815 /* OnboardingView.swift in Sources */,
+				47600BAB2974750300394815 /* FruitModel.swift in Sources */,
 				47600B9429740EF000394815 /* FructusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -277,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
